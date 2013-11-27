@@ -1,5 +1,5 @@
 ---
-Title: solaryan Colorscheme for Vim
+Title: solaryan colorscheme for Vim
 Author: Ethan Schoonover (remixed by Yiannis Skarpathiotis)
 Created:  2011 Mar 15
 Modified: 2013 Nov 26
@@ -9,6 +9,7 @@ Modified: 2013 Nov 26
 solaryan Colorscheme for Vim (based on Solarized by Ethan Schoonover)
 =============================
 
+This is just a tweaked version of Solarized. It def needs to be cleaned up and tested in environments other than Terminal...
 
 Origianlly Developed by Ethan Schoonover <es@ethanschoonover.com>
 
@@ -22,7 +23,6 @@ Origianlly Developed by Ethan Schoonover <es@ethanschoonover.com>
 Installation
 ------------
 
-Id recommend using this with Terminal because thats what its been optimized for.
 ### Terminal Setup
 
 1. Select the Pro Profile under settings and make it your default by clicking the Default button at the bottom of the list
@@ -85,143 +85,143 @@ set background=dark
 colorscheme solaryan
 
 
-Advanced Configuration (Same vars as solarized)
-----------------------
+> Advanced Configuration (Same vars as solarized)
+> ----------------------
 
-Solarized will work out of the box with just the two lines specified above but 
-does include several other options that can be set in your .vimrc file.
+> Solarized will work out of the box with just the two lines specified above but 
+> does include several other options that can be set in your .vimrc file.
 
-Set these in your vimrc file prior to calling the colorscheme.
-"
-    option name               default     optional
-    ------------------------------------------------
-    g:solarized_termcolors=   16      |   256
-    g:solarized_termtrans =   0       |   1
-    g:solarized_degrade   =   0       |   1
-    g:solarized_bold      =   1       |   0
-    g:solarized_underline =   1       |   0
-    g:solarized_italic    =   1       |   0
-    g:solarized_contrast  =   "normal"|   "high" or "low"
-    g:solarized_visibility=   "normal"|   "high" or "low"
-    ------------------------------------------------
+> Set these in your vimrc file prior to calling the colorscheme.
+> "
+>     option name               default     optional
+>     ------------------------------------------------
+>     g:solarized_termcolors=   16      |   256
+>     g:solarized_termtrans =   0       |   1
+>     g:solarized_degrade   =   0       |   1
+>     g:solarized_bold      =   1       |   0
+>     g:solarized_underline =   1       |   0
+>     g:solarized_italic    =   1       |   0
+>     g:solarized_contrast  =   "normal"|   "high" or "low"
+>     g:solarized_visibility=   "normal"|   "high" or "low"
+>     ------------------------------------------------
 
-### Option Details
+> ### Option Details
 
-*   g:solarized_termcolors
+> *   g:solarized_termcolors
 
-    This is set to *16* by default, meaning that Solarized will attempt to use 
-    the standard 16 colors of your terminal emulator. You will need to set 
-    those colors to the correct Solarized values either manually or by 
-    importing one of the many colorscheme available for popular terminal 
-    emulators and Xdefaults.
+>     This is set to *16* by default, meaning that Solarized will attempt to use 
+>     the standard 16 colors of your terminal emulator. You will need to set 
+>     those colors to the correct Solarized values either manually or by 
+>     importing one of the many colorscheme available for popular terminal 
+>     emulators and Xdefaults.
 
-*   g:solarized_termtrans
+> *   g:solarized_termtrans
 
-    If you use a terminal emulator with a transparent background and Solarized 
-    isn't displaying the background color transparently, set this to 1 and 
-    Solarized will use the default (transparent) background of the terminal 
-    emulator. *urxvt* required this in my testing; iTerm2 did not.
+>     If you use a terminal emulator with a transparent background and Solarized 
+>     isn't displaying the background color transparently, set this to 1 and 
+>     Solarized will use the default (transparent) background of the terminal 
+>     emulator. *urxvt* required this in my testing; iTerm2 did not.
 
-    Note that on Mac OS X Terminal.app, solarized_termtrans is set to 1 by 
-    default as this is almost always the best option. The only exception to 
-    this is if the working terminfo file supports 256 colors (xterm-256color).
+>     Note that on Mac OS X Terminal.app, solarized_termtrans is set to 1 by 
+>     default as this is almost always the best option. The only exception to 
+>     this is if the working terminfo file supports 256 colors (xterm-256color).
 
-*   g:solarized_degrade
+> *   g:solarized_degrade
 
-    For test purposes only; forces Solarized to use the 256 degraded color mode 
-    to test the approximate color values for accuracy.
+>     For test purposes only; forces Solarized to use the 256 degraded color mode 
+>     to test the approximate color values for accuracy.
 
-*   g:solarized_bold | g:solarized_underline | g:solarized_italic
+> *   g:solarized_bold | g:solarized_underline | g:solarized_italic
 
-    If you wish to stop Solarized from displaying bold, underlined or 
-    italicized typefaces, simply assign a zero value to the appropriate 
-    variable, for example: `let g:solarized_italic=0`
+>     If you wish to stop Solarized from displaying bold, underlined or 
+>     italicized typefaces, simply assign a zero value to the appropriate 
+>     variable, for example: `let g:solarized_italic=0`
 
-*   g:solarized_contrast
+> *   g:solarized_contrast
 
-    Stick with normal! It's been carefully tested. Setting this option to high 
-    or low does use the same Solarized palette but simply shifts some values up 
-    or down in order to expand or compress the tonal range displayed.
+>     Stick with normal! It's been carefully tested. Setting this option to high 
+>     or low does use the same Solarized palette but simply shifts some values up 
+>     or down in order to expand or compress the tonal range displayed.
 
-*   g:solarized_visibility
+> *   g:solarized_visibility
 
-    Special characters such as trailing whitespace, tabs, newlines, when
-    displayed using `:set list` can be set to one of three levels depending on 
-    your needs. Default value is `normal` with `high` and `low` options.
+>     Special characters such as trailing whitespace, tabs, newlines, when
+>     displayed using `:set list` can be set to one of three levels depending on 
+>     your needs. Default value is `normal` with `high` and `low` options.
 
-Toggle Background Function
---------------------------
+> Toggle Background Function
+> --------------------------
 
-Solarized comes with a Toggle Background plugin that by default will map to 
-<F5> if that mapping is available. If it is not available you will need to 
-either map the function manually or change your current <F5> mapping to 
-something else.
+> Solarized comes with a Toggle Background plugin that by default will map to 
+> <F5> if that mapping is available. If it is not available you will need to 
+> either map the function manually or change your current <F5> mapping to 
+> something else.
 
-To set your own mapping in your .vimrc file, simply add the following line to 
-support normal, insert and visual mode usage, changing the "<F5>" value to the 
-key or key combination you wish to use:
+> To set your own mapping in your .vimrc file, simply add the following line to 
+> support normal, insert and visual mode usage, changing the "<F5>" value to the 
+> key or key combination you wish to use:
 
-    call togglebg#map("<F5>")
+>     call togglebg#map("<F5>")
 
-Note that you'll want to use a single function key or equivalent if you want 
-the plugin to work in all modes (normal, insert, visual).
+> Note that you'll want to use a single function key or equivalent if you want 
+> the plugin to work in all modes (normal, insert, visual).
 
-Code Notes
-----------
+> Code Notes
+> ----------
 
-Use folding to view the `solarized.vim` script with `foldmethod=marker` turned 
-on.
+> Use folding to view the `solarized.vim` script with `foldmethod=marker` turned 
+> on.
 
-I have attempted to modularize the creation of Vim colorschemes in this script 
-and, while it could be refactored further, it should be a good foundation for 
-the creation of any color scheme. By simply changing the sixteen values in the 
-GUI section and testing in gvim (or mvim) you can rapidly prototype new 
-colorschemes without diving into the weeds of line-item editing each syntax 
-highlight declaration.
+> I have attempted to modularize the creation of Vim colorschemes in this script 
+> and, while it could be refactored further, it should be a good foundation for 
+> the creation of any color scheme. By simply changing the sixteen values in the 
+> GUI section and testing in gvim (or mvim) you can rapidly prototype new 
+> colorschemes without diving into the weeds of line-item editing each syntax 
+> highlight declaration.
 
-The Values
-----------
+> The Values
+> ----------
 
-L\*a\*b values are canonical (White D65, Reference D50), other values are 
-matched in sRGB space.
+> L\*a\*b values are canonical (White D65, Reference D50), other values are 
+> matched in sRGB space.
 
-    SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      sRGB        HSB
-    --------- ------- ---- -------  ----------- ---------- ----------- -----------
-    base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
-    base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
-    base01    #586e75 10/7 brgreen  240 #4e4e4e 45 -07 -07  88 110 117 194  25  46
-    base00    #657b83 11/7 bryellow 241 #585858 50 -07 -07 101 123 131 195  23  51
-    base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
-    base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
-    base2     #eee8d5  7/7 white    254 #d7d7af 92 -00  10 238 232 213  44  11  93
-    base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
-    yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
-    orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
-    red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
-    magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
-    violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
-    blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
-    cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
-    green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+>     SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      sRGB        HSB
+>     --------- ------- ---- -------  ----------- ---------- ----------- -----------
+>     base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+>     base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+>     base01    #586e75 10/7 brgreen  240 #4e4e4e 45 -07 -07  88 110 117 194  25  46
+>     base00    #657b83 11/7 bryellow 241 #585858 50 -07 -07 101 123 131 195  23  51
+>     base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+>     base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+>     base2     #eee8d5  7/7 white    254 #d7d7af 92 -00  10 238 232 213  44  11  93
+>     base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+>     yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+>     orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+>     red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+>     magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+>     violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+>     blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+>     cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+>     green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 
-License
--------
-Copyright (c) 2011 Ethan Schoonover
+> License
+> -------
+> Copyright (c) 2011 Ethan Schoonover
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+> The above copyright notice and this permission notice shall be included in
+> all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+> THE SOFTWARE.
