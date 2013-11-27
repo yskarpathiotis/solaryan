@@ -68,10 +68,9 @@ Id recommend using this with Terminal because thats what its been optimized for.
 
 Just copy this at the bottom...
 
-" solaryan options 
+" solaryan options
 syntax on
 let g:solarized_termtrans=1
-
 set t_Co=256
 let g:solarized_termcolors=256
 
