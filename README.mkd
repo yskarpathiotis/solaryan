@@ -45,19 +45,19 @@ Installation
 
 1.  Download and install Tim Pope's [Pathogen].
 
-2.  Next, move or clone the `vim-colors-solarized` directory so that it is 
+2.  Next, move or clone the `solaryan` directory so that it is 
     a subdirectory of the `.vim/bundle` directory.
 
     a. **Clone:** 
 
             $ cd ~/.vim/bundle
-            $ git clone git://github.com/altercation/vim-colors-solarized.git
+            $ git clone git://github.com/yskarpathiotis/solaryan.git
 
     b. **Move:**
 
-        In the parent directory of vim-colors-solarized:
+        In the parent directory of solaryan:
         
-            $ mv vim-colors-solarized ~/.vim/bundle/
+            $ mv solaryan ~/.vim/bundle/
 
 ### Option 3: Vundle installation ***(recommended)***
 
